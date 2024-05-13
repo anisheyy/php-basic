@@ -1,0 +1,104 @@
+body, html {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.header {
+  padding: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  margin-right: 15px;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+h1 {
+  margin-left: 15px;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.groupSelection {
+  display: flex;
+  height: 100vh;
+}
+
+.group {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.strawHats {
+  background-image: url('../php/strawHats/images/select-strawHats.jpg');
+}
+
+.akatsuki {
+  background-image: url('../php/akatsuki/images/akatsuki.jpg');
+}
+
+.phantom {
+  background-image: url('../php/phantomTroupe/images/phantom.jpg');
+}
+
+.groupLink {
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+.logout:hover {
+  transform: scale(1.1);
+}
+
+.logout:active {
+  transform: scale(0.9);
+}
+
+h1:hover{
+  transform: scale(1.1);
+}
+
+h1:active{
+  transform: scale(0.9);
+}
+
+.groupLink:hover {
+  transform: scale(1.1);
+}
+
+.groupLink:active {
+  transform: scale(0.9);
+}

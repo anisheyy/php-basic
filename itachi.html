@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Itachi</title>
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+
+    <style>
+    html, body {
+        height: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        a {
+        color: #ffc1cc 
+        }
+
+        h1, h2, h3 {
+        font-weight: lighter 
+        }
+
+        body{
+            color: #fff;
+            float: right;
+            padding: 1.5em;
+            max-width: 35em;
+            line-height: 1.8em;
+            background: url(images/itachi-bg.jpg) center center/cover fixed no-repeat;
+            width: 1920px;
+            height: 1080px;
+        }
+        header{
+            text-align: right;
+            margin-bottom: 1em;
+        }
+        header .char-name{
+            padding: 1rem;
+            text-align: center;
+            display: inline-block;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .char-name h1{
+            margin-bottom: 0;
+        }
+        .char-name p{
+            color: #fff;
+            font-size: 1em;
+        }
+
+        main{
+            padding: 1.5em;
+            margin-bottom: 2em;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        @media screen and (max-width: 768px){
+            body{
+                float: none;
+                padding: 0;
+                max-width: 100%;
+            }
+
+            header{
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+                
+            }
+            header .char-name{
+                padding: 2em 3em;
+            }
+        }
+
+        main h1{
+            position: relative;
+            margin-top: 3em;
+        }
+        main h1:before{
+            content: '';
+            height: 100%;
+            width: .5rem;
+            left: -1.5rem;
+            background: #ffc1cc;
+            position: absolute;
+        }
+
+        main h1:first-child{
+            margin-top: 0;
+        }
+
+        .next, .back {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .arrow-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        }
+
+        .arrow-link:hover {
+        background-color: #0056b3;
+        }
+
+
+        footer{
+            padding: 1em;
+            text-align: center;
+            background: rgba(0, 0, 0, .6);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="char-name">
+        <h1>Itachi Uchiha</h1>
+        <p>Known for his sacrifice</p>
+    </div>
+</header>
+
+<main>
+    <h1>Who am I:</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptas? Dicta quod beatae, dolorem voluptas quos dolores laudantium minima, tenetur nobis fuga blanditiis sunt esse necessitatibus earum eos rerum ut reiciendis, quisquam reprehenderit! Culpa eaque quae fugit, incidunt est aperiam?</p>
+        
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque placeat in maxime praesentium natus. Dicta minus ea recusandae laudantium voluptatum delectus voluptates adipisci assumenda ullam. Quod consequatur ea repellat cupiditate architecto possimus minima cumque modi. Distinctio libero tempora eos mollitia delectus ullam molestiae facere laudantium maiores eligendi consequuntur sequi nobis illum laborum esse, asperiores tenetur unde maxime dolore! Dolor non quia amet quae libero nesciunt obcaecati, deserunt ut distinctio omnis!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid explicabo maiores pariatur quae fuga animi excepturi voluptate architecto quasi.</p>
+    
+    <div class="img">
+        <p><img src="images/itachi.jpg" width="394" height="450"/></p>    
+    </div>
+    
+</main>
+
+<div class="back">
+    <a href="pain.html" class="arrow-link">Go Back</a>
+</div>
+
+<div class="next">
+    <a href="Obito.html" class="arrow-link">Go to Tobi's Page</a>
+</div>
+
+<div class="back">
+    <a href="../choose.php" class="arrow-link">Go to Selection Page</a>
+</div>
+
+<footer>
+    <p>© <span id="year">20??</span> All Rights Reserved.</p>
+    <p>Made By Anish Timalsina</p>
+</footer>
+
+<script>
+    let year = document.getElementById("year");
+    year.innerHTML = new Date().getFullYear();
+</script>
+
+</body>
+</html>
